@@ -1,0 +1,107 @@
+.recomendacin-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;  
+  background-size: cover;
+  background-image: url("src/bg2.png");
+}
+.recomendacin-hero {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-twounits);
+  max-width: var(--dl-size-size-maxwidth);
+  min-height: 80vh;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.recomendacin-b-g {
+  left: 0px;
+  width: 100%;
+  bottom: 0px;
+  height: 591px;
+  opacity: 0.5;
+  position: absolute;
+  object-fit: cover;
+}
+.recomendacin-enviar {
+  position: absolute;
+  top: calc(100% + 50px);
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.3s;
+  padding: var(--dl-space-space-unit) var(--dl-space-space-twounits);
+  text-decoration: none;
+}
+.recomendacin-enviar:hover {
+  color: var(--dl-color-gray-white);
+  background-color: var(--dl-color-gray-black);
+}
+.recomendacin-text1:hover {
+  color: var(--dl-color-gray-white);
+  background-color: var(--dl-color-gray-black);
+}
+.recomendacin-by {
+  top: 309px;
+  left: 317px;
+  position: absolute;
+}
+.recomendacin-genre {
+  top: 359px;
+  left: 317px;
+  position: absolute;
+}
+.recomendacin-numpage {
+  top: 409px;
+  left: 317px;
+  position: absolute;
+}
+.recomendacin-rate {
+  top: 459px;
+  left: 317px;
+  position: absolute;
+}
+.recomendacin-sinopsis {
+  top: 509px;
+  left: 317px;
+  position: absolute;
+}
+.recomendacin-sinopsis2 {
+  top: 559px;
+  left: 317px;
+  width: 870px;
+  margin: auto;  
+  position: absolute;
+}
+.recomendacin-text3 {
+  top: var(--dl-space-space-sixunits);
+  left: 317px;
+  width: auto;
+  height: 51px;
+  margin: auto;
+  position: absolute;
+}
+@media(max-width: 991px) {
+  .recomendacin-hero {
+    padding: var(--dl-space-space-threeunits);
+    flex-direction: column;
+  }
+}
+@media(max-width: 767px) {
+  .recomendacin-hero {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+}
+@media(max-width: 479px) {
+  .recomendacin-hero {
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+}
